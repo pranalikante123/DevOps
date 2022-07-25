@@ -11,6 +11,11 @@ pipeline {
                 bat 'systeminfo '
             }
         }
+        stage('deploy') {
+            steps {
+                bat 'systeminfo '
+            }
+        }
     }
 }
 
