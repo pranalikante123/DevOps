@@ -16,6 +16,11 @@ pipeline {
                 echo 'systeminfo '
             }
         }
+        stage('build') {
+            steps {
+                echo 'systeminfo '
+            }
+        }
     }
 }
 
