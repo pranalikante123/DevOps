@@ -19,6 +19,8 @@ pipeline {
         stage('build') {
             steps {
                 echo 'systeminfo '
+                env.GIT_COMMIT = sh(script: "git rev-parse HEAD ", returnStdout: true).trim() 
+				println "${env.GIT_COMMIT}"
             }
         }
     }
